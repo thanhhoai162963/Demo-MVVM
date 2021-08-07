@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp">
+    <ImageView
+            android:id="@+id/image1"
+            android:layout_margin="7dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rectangle_bg"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/tV_info"
+        android:layout_margin="7dp"
+        android:layout_toEndOf="@id/image1"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextClock
+        android:layout_margin="7dp"
+        android:id="@+id/tcDateTime"
+        android:textColor="#A19C9C"
+        android:format24Hour="d-M-yyyy"
+        android:layout_alignBottom="@id/image1"
+        android:layout_toEndOf="@id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
